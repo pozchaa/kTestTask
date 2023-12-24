@@ -124,10 +124,6 @@ func checkRoman(a, b string) (bool, error) {
 }
 
 func main() {
-	//fmt.Println(decimalToRomanRecursive(100))
-	//fmt.Println(Decode("1000"))
-	//
-	//_ = checkRoman("X", "I")
 	operation := readOperation()
 	s := splitString(operation)
 	a, operator, b := catchValues(s)
@@ -161,6 +157,4 @@ func main() {
 		}
 		fmt.Println(result)
 	}
-	//
-	// fmt.Println(splitString(operation))
 }
